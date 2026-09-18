@@ -1,188 +1,1007 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>Clareza Financeira | Entenda seu dinheiro sem complicação</title>
 
     <meta
         name="description"
-        content="Clareza Financeira — organize sua vida financeira de forma simples, clara e sem complicação."
+        content="Clareza Financeira é um aplicativo Android gratuito e open source para visualizar renda, despesas, previsão do mês e quanto sobra da sua renda."
     >
 
-    <title>Clareza Financeira</title>
+    <meta
+        name="keywords"
+        content="finanças pessoais, aplicativo financeiro, controle de gastos, despesas, renda, Android, open source, Clareza Financeira"
+    >
+
+    <meta name="author" content="Maiquel Robert Mafra Junior">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#2869d8">
+
+    <!-- Ícone do projeto -->
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/icons/clareza-financeira-icon.png"
+    >
+
+    <link
+        rel="apple-touch-icon"
+        href="assets/icons/clareza-financeira-icon.png"
+    >
+
+    <link
+        rel="canonical"
+        href="https://maiquel-devs.github.io/clareza-financeira-landing-page/"
+    >
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Clareza Financeira">
+
+    <meta
+        property="og:description"
+        content="Entenda quanto entra, quanto sai e quanto sobra da sua renda de forma simples."
+    >
+
+    <meta
+        property="og:url"
+        content="https://maiquel-devs.github.io/clareza-financeira-landing-page/"
+    >
+
+    <meta
+        property="og:image"
+        content="https://maiquel-devs.github.io/clareza-financeira-landing-page/assets/icons/clareza-financeira-icon.png"
+    >
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="container header-content">
-            <a href="#inicio" class="brand">
-                Clareza Financeira
+<header class="site-header">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <a
+                class="navbar-brand fw-bold d-flex align-items-center gap-2"
+                href="#inicio"
+            >
+                <img
+                    src="assets/icons/clareza-financeira-icon.png"
+                    alt=""
+                    class="brand-icon"
+                    width="38"
+                    height="38"
+                >
+
+                <span>Clareza Financeira</span>
             </a>
 
-            <nav>
-                <a href="#sobre">Sobre</a>
-                <a href="#recursos">Recursos</a>
-                <a href="#open-source">Open Source</a>
-            </nav>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavigation"
+                aria-controls="mainNavigation"
+                aria-expanded="false"
+                aria-label="Abrir menu de navegação"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+                class="collapse navbar-collapse"
+                id="mainNavigation"
+            >
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#como-funciona">
+                            Como funciona
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#privacidade">
+                            Privacidade
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#open-source">
+                            Open source
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#desenvolvedor">
+                            Desenvolvedor
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="btn btn-primary ms-lg-2"
+                            href="#download"
+                        >
+                            Baixar para Android
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
+</header>
 
-    <main>
 
-        <section class="hero" id="inicio">
-            <div class="container hero-content">
+<main>
 
-                <div class="hero-text">
-                    <span class="tag">Simples. Claro. Seu.</span>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+
+                    <span class="eyebrow">
+                        Finanças pessoais sem complicação
+                    </span>
 
                     <h1>
                         Entenda seu dinheiro
-                        <span>sem complicação.</span>
+                        <span>com mais clareza.</span>
                     </h1>
 
-                    <p>
-                        O Clareza Financeira ajuda você a visualizar sua renda,
-                        seus gastos e para onde seu dinheiro está indo de forma
-                        simples e rápida.
+                    <p class="hero-description">
+                        Veja quanto entra, quanto sai, quanto sobra da sua
+                        renda e para onde seu dinheiro está indo — sem contas,
+                        integrações bancárias ou configurações complicadas.
                     </p>
 
                     <div class="hero-actions">
-                        <a href="#sobre" class="button primary">
-                            Conheça o projeto
+
+                        <a
+                            class="btn btn-primary btn-lg"
+                            href="https://github.com/Maiquel-Devs/clareza-financeira/releases/download/v1.0.0-rc1/clareza-financeira-v1.0.0-rc1.apk"
+                        >
+                            Baixar para Android
                         </a>
 
-                        <a href="#open-source" class="button secondary">
-                            Ver código aberto
+                        <a
+                            class="btn btn-outline-primary btn-lg"
+                            href="https://github.com/Maiquel-Devs/clareza-financeira"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Ver código-fonte
                         </a>
+
+                    </div>
+
+                    <div class="hero-trust">
+                        <span>✓ Gratuito</span>
+                        <span>✓ Sem cadastro</span>
+                        <span>✓ Open source</span>
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6 text-center">
+                    <div class="phone-showcase">
+
+                        <img
+                            src="assets/images/dashboard.png"
+                            alt="Dashboard do aplicativo Clareza Financeira mostrando renda, previsão de despesas e sobra prevista"
+                            class="img-fluid app-screen hero-screen"
+                        >
+
                     </div>
                 </div>
 
-                <div class="hero-card">
-                    <p class="card-label">Sua visão do mês</p>
-
-                    <div class="financial-item">
-                        <span>Renda</span>
-                        <strong>R$ 5.000</strong>
-                    </div>
-
-                    <div class="financial-item">
-                        <span>Despesas previstas</span>
-                        <strong>R$ 3.200</strong>
-                    </div>
-
-                    <div class="financial-result">
-                        <span>Sobra prevista</span>
-                        <strong>R$ 1.800</strong>
-                    </div>
-
-                    <p class="card-message">
-                        Você já sabe para onde seu dinheiro está indo.
-                    </p>
-                </div>
-
             </div>
-        </section>
-
-
-        <section class="section" id="sobre">
-            <div class="container narrow">
-                <span class="section-label">Sobre</span>
-
-                <h2>Clareza antes de complexidade.</h2>
-
-                <p>
-                    O Clareza Financeira nasceu com um objetivo simples:
-                    ajudar pessoas a entenderem rapidamente sua situação
-                    financeira sem transformar o controle do dinheiro
-                    em uma tarefa complicada.
-                </p>
-
-                <p>
-                    A ideia é simples: abriu o aplicativo, bateu o olho,
-                    entendeu.
-                </p>
-            </div>
-        </section>
-
-
-        <section class="section soft-background" id="recursos">
-            <div class="container">
-                <span class="section-label">Recursos</span>
-
-                <h2>O essencial para entender seu mês.</h2>
-
-                <div class="features">
-
-                    <article class="feature-card">
-                        <h3>Renda e despesas</h3>
-                        <p>
-                            Registre de onde vem e para onde vai o seu dinheiro.
-                        </p>
-                    </article>
-
-                    <article class="feature-card">
-                        <h3>Previsão mensal</h3>
-                        <p>
-                            Veja seus gastos conhecidos e quanto da sua renda
-                            deve sobrar no mês.
-                        </p>
-                    </article>
-
-                    <article class="feature-card">
-                        <h3>Gastos recorrentes</h3>
-                        <p>
-                            Cadastre despesas mensais uma vez e deixe o
-                            aplicativo considerá-las automaticamente.
-                        </p>
-                    </article>
-
-                    <article class="feature-card">
-                        <h3>Histórico</h3>
-                        <p>
-                            Consulte meses anteriores sem misturar os períodos
-                            da sua vida financeira.
-                        </p>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-
-        <section class="section" id="open-source">
-            <div class="container narrow">
-                <span class="section-label">Open Source</span>
-
-                <h2>Um projeto aberto.</h2>
-
-                <p>
-                    O Clareza Financeira é um projeto open source desenvolvido
-                    com foco em simplicidade, clareza e educação financeira.
-                </p>
-
-                <p>
-                    O código-fonte é disponibilizado sob a licença MIT.
-                </p>
-
-                <!-- Depois colocaremos aqui o link real do GitHub -->
-                <a href="#" class="button primary">
-                    Ver no GitHub
-                </a>
-            </div>
-        </section>
-
-    </main>
-
-
-    <footer class="footer">
-        <div class="container footer-content">
-            <p>Clareza Financeira</p>
-            <p>Desenvolvido por Maiquel.</p>
         </div>
-    </footer>
+    </section>
+
+
+    <!-- PROPOSTA -->
+    <section class="section section-white" id="como-funciona">
+        <div class="container narrow">
+
+            <div class="section-heading text-center">
+
+                <span class="eyebrow">
+                    A proposta
+                </span>
+
+                <h2>
+                    Suas finanças não precisam ser complicadas.
+                </h2>
+
+                <p>
+                    O Clareza Financeira foi criado para responder rapidamente
+                    às perguntas mais importantes sobre o seu mês.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4 mt-4">
+
+                <div class="col-md-4">
+                    <article class="feature-card h-100">
+
+                        <div class="feature-icon">R$</div>
+
+                        <h3>Quanto entra?</h3>
+
+                        <p>
+                            Cadastre suas fontes de renda e veja quanto dinheiro
+                            está disponível no período.
+                        </p>
+
+                    </article>
+                </div>
+
+
+                <div class="col-md-4">
+                    <article class="feature-card h-100">
+
+                        <div class="feature-icon">↓</div>
+
+                        <h3>Quanto sai?</h3>
+
+                        <p>
+                            Registre seus gastos e acompanhe a previsão das
+                            despesas conhecidas do mês.
+                        </p>
+
+                    </article>
+                </div>
+
+
+                <div class="col-md-4">
+                    <article class="feature-card h-100">
+
+                        <div class="feature-icon">✓</div>
+
+                        <h3>Quanto sobra?</h3>
+
+                        <p>
+                            O aplicativo calcula a sobra prevista da sua renda
+                            para facilitar a leitura da situação financeira.
+                        </p>
+
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FLUXO -->
+    <section class="section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6 order-2 order-lg-1 text-center">
+
+                    <img
+                        src="assets/images/financial-breakdown.png"
+                        alt="Tela do Clareza Financeira mostrando de onde vem a renda e para onde vão as despesas"
+                        class="img-fluid app-screen"
+                        loading="lazy"
+                    >
+
+                </div>
+
+
+                <div class="col-lg-6 order-1 order-lg-2">
+
+                    <span class="eyebrow">
+                        Entenda o fluxo
+                    </span>
+
+                    <h2>
+                        Veja de onde vem e para onde vai seu dinheiro.
+                    </h2>
+
+                    <p class="section-description">
+                        Sua renda e suas despesas ficam organizadas de forma
+                        visual. Assim, você não precisa interpretar uma tela
+                        cheia de números para entender o mês.
+                    </p>
+
+                    <ul class="simple-check-list">
+                        <li>Visualize suas fontes de renda</li>
+                        <li>Veja os gastos separados por categoria</li>
+                        <li>Identifique rapidamente onde está gastando</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- GRÁFICO -->
+    <section class="section section-white">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+
+                    <span class="eyebrow">
+                        Visualização simples
+                    </span>
+
+                    <h2>
+                        Descubra quais despesas pesam mais no seu mês.
+                    </h2>
+
+                    <p class="section-description">
+                        O gráfico mostra a participação de cada categoria na
+                        previsão das suas despesas, ajudando você a identificar
+                        rapidamente para onde o dinheiro está indo.
+                    </p>
+
+                </div>
+
+
+                <div class="col-lg-6 text-center">
+
+                    <img
+                        src="assets/images/expense-chart.png"
+                        alt="Gráfico do Clareza Financeira mostrando a distribuição das despesas por categoria"
+                        class="img-fluid app-screen"
+                        loading="lazy"
+                    >
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- HISTÓRICO -->
+    <section class="section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6 order-2 order-lg-1 text-center">
+
+                    <img
+                        src="assets/images/history.png"
+                        alt="Histórico financeiro mensal do aplicativo Clareza Financeira"
+                        class="img-fluid app-screen"
+                        loading="lazy"
+                    >
+
+                </div>
+
+
+                <div class="col-lg-6 order-1 order-lg-2">
+
+                    <span class="eyebrow">
+                        Acompanhe o tempo
+                    </span>
+
+                    <h2>
+                        Consulte seus meses anteriores.
+                    </h2>
+
+                    <p class="section-description">
+                        O histórico permite consultar períodos anteriores e
+                        entender como sua renda, despesas e sobra prevista
+                        mudaram ao longo do tempo.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- RECORRÊNCIAS -->
+    <section class="section section-white">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+
+                    <span class="eyebrow">
+                        Menos trabalho
+                    </span>
+
+                    <h2>
+                        Gastos que se repetem não precisam ser cadastrados todo mês.
+                    </h2>
+
+                    <p class="section-description">
+                        Aluguel, mensalidades e outros gastos recorrentes podem
+                        ser cadastrados uma vez e considerados automaticamente
+                        nos próximos períodos.
+                    </p>
+
+                    <p class="support-text">
+                        Você continua podendo ajustar uma ocorrência específica
+                        quando algo diferente acontecer.
+                    </p>
+
+                </div>
+
+
+                <div class="col-lg-6 text-center">
+
+                    <img
+                        src="assets/images/add-recurring-expense.png"
+                        alt="Cadastro de uma despesa mensal recorrente no Clareza Financeira"
+                        class="img-fluid app-screen"
+                        loading="lazy"
+                    >
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PRIVACIDADE -->
+    <section
+        class="section privacy-section"
+        id="privacidade"
+    >
+        <div class="container narrow">
+
+            <div class="section-heading text-center">
+
+                <span class="eyebrow">
+                    Privacidade
+                </span>
+
+                <h2>
+                    Seus dados financeiros ficam no seu dispositivo.
+                </h2>
+
+                <p>
+                    O Clareza Financeira não exige conta e não depende de um
+                    servidor próprio para armazenar suas informações financeiras.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4 mt-4">
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="trust-card h-100">
+
+                        <span class="trust-symbol">✓</span>
+
+                        <h3>Sem cadastro</h3>
+
+                        <p>
+                            Você não precisa criar uma conta para usar o aplicativo.
+                        </p>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="trust-card h-100">
+
+                        <span class="trust-symbol">⌂</span>
+
+                        <h3>Dados locais</h3>
+
+                        <p>
+                            As informações financeiras são armazenadas localmente.
+                        </p>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="trust-card h-100">
+
+                        <span class="trust-symbol">&lt;/&gt;</span>
+
+                        <h3>Código aberto</h3>
+
+                        <p>
+                            O código do aplicativo está disponível publicamente.
+                        </p>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="trust-card h-100">
+
+                        <span class="trust-symbol">MIT</span>
+
+                        <h3>Licença MIT</h3>
+
+                        <p>
+                            O projeto pode ser estudado, modificado e reutilizado.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- OPEN SOURCE -->
+    <section
+        class="section section-white"
+        id="open-source"
+    >
+        <div class="container narrow">
+
+            <div class="open-source-box">
+
+                <span class="eyebrow">
+                    Transparência
+                </span>
+
+                <h2>
+                    Não precisa confiar apenas no que esta página diz.
+                </h2>
+
+                <p>
+                    O Clareza Financeira é open source. O código-fonte do
+                    aplicativo está publicado no GitHub e pode ser consultado
+                    por qualquer pessoa.
+                </p>
+
+                <p>
+                    O projeto é disponibilizado sob a licença MIT.
+                </p>
+
+                <div class="mt-4">
+
+                    <a
+                        href="https://github.com/Maiquel-Devs/clareza-financeira"
+                        class="btn btn-outline-primary btn-lg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Ver projeto no GitHub
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- DOWNLOAD -->
+    <section
+        class="section download-section"
+        id="download"
+    >
+        <div class="container narrow text-center">
+
+            <span class="eyebrow eyebrow-light">
+                Versão para testes
+            </span>
+
+            <h2>
+                Experimente o Clareza Financeira.
+            </h2>
+
+            <p class="download-description">
+                A versão RC1 está disponível gratuitamente para dispositivos Android.
+            </p>
+
+            <a
+                class="btn btn-light btn-lg download-button"
+                href="https://github.com/Maiquel-Devs/clareza-financeira/releases/download/v1.0.0-rc1/clareza-financeira-v1.0.0-rc1.apk"
+            >
+                Baixar Clareza Financeira
+            </a>
+
+            <div class="download-details">
+                <span>Android</span>
+                <span>•</span>
+                <span>v1.0.0-rc1</span>
+                <span>•</span>
+                <span>8,5 MB</span>
+            </div>
+
+
+            <div class="installation-note">
+
+                <strong>
+                    Por que o Android pode mostrar um aviso?
+                </strong>
+
+                <p>
+                    O Clareza Financeira ainda não é distribuído pela Google
+                    Play Store. Por isso, o Android pode pedir sua autorização
+                    para instalar um aplicativo baixado pelo navegador.
+                </p>
+
+                <p class="mb-0">
+                    O botão acima baixa o mesmo APK publicado na Release oficial
+                    do projeto no GitHub.
+                </p>
+
+            </div>
+
+
+            <a
+                href="https://github.com/Maiquel-Devs/clareza-financeira/releases/tag/v1.0.0-rc1"
+                class="release-link"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Consultar a Release oficial no GitHub
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- DESENVOLVEDOR -->
+    <section
+        class="section section-white"
+        id="desenvolvedor"
+    >
+        <div class="container narrow">
+
+            <div class="developer-box">
+
+                <div class="developer-avatar" aria-hidden="true">
+                    M
+                </div>
+
+
+                <div>
+
+                    <span class="eyebrow">
+                        Projeto independente
+                    </span>
+
+                    <h2>
+                        Desenvolvido por Maiquel Robert Mafra Junior.
+                    </h2>
+
+                    <p>
+                        O Clareza Financeira é um projeto independente criado
+                        com foco em tornar a visualização das finanças pessoais
+                        mais simples e compreensível.
+                    </p>
+
+                    <p>
+                        O desenvolvimento, código-fonte e evolução do projeto
+                        podem ser acompanhados publicamente.
+                    </p>
+
+
+                    <div class="developer-links">
+
+                        <a
+                            href="https://github.com/Maiquel-Devs"
+                            class="btn btn-outline-primary"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/maiquel-robert-mafra-junior-41a383364/"
+                            class="btn btn-outline-primary"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section
+        class="section"
+        id="duvidas"
+    >
+        <div class="container narrow">
+
+            <div class="section-heading text-center">
+
+                <span class="eyebrow">
+                    Dúvidas
+                </span>
+
+                <h2>
+                    Perguntas frequentes
+                </h2>
+
+            </div>
+
+
+            <div
+                class="accordion mt-5"
+                id="faqAccordion"
+            >
+
+                <div class="accordion-item">
+
+                    <h3 class="accordion-header">
+
+                        <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faqOne"
+                            aria-expanded="true"
+                            aria-controls="faqOne"
+                        >
+                            Meus dados financeiros são enviados para algum servidor?
+                        </button>
+
+                    </h3>
+
+                    <div
+                        id="faqOne"
+                        class="accordion-collapse collapse show"
+                        data-bs-parent="#faqAccordion"
+                    >
+                        <div class="accordion-body">
+                            Não. O aplicativo não exige conta e as informações
+                            financeiras utilizadas pelo Clareza Financeira são
+                            armazenadas localmente no dispositivo.
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="accordion-item">
+
+                    <h3 class="accordion-header">
+
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faqTwo"
+                            aria-expanded="false"
+                            aria-controls="faqTwo"
+                        >
+                            Por que o aplicativo não está na Play Store?
+                        </button>
+
+                    </h3>
+
+                    <div
+                        id="faqTwo"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#faqAccordion"
+                    >
+                        <div class="accordion-body">
+                            Neste momento, o projeto está sendo distribuído
+                            diretamente pelo GitHub enquanto a versão RC1 é
+                            testada por usuários reais.
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="accordion-item">
+
+                    <h3 class="accordion-header">
+
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faqThree"
+                            aria-expanded="false"
+                            aria-controls="faqThree"
+                        >
+                            O que significa RC1?
+                        </button>
+
+                    </h3>
+
+                    <div
+                        id="faqThree"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#faqAccordion"
+                    >
+                        <div class="accordion-body">
+                            RC significa Release Candidate. É uma versão
+                            candidata à primeira versão estável do aplicativo,
+                            disponibilizada para validação antes da v1.0.
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="accordion-item">
+
+                    <h3 class="accordion-header">
+
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faqFour"
+                            aria-expanded="false"
+                            aria-controls="faqFour"
+                        >
+                            O aplicativo é gratuito?
+                        </button>
+
+                    </h3>
+
+                    <div
+                        id="faqFour"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#faqAccordion"
+                    >
+                        <div class="accordion-body">
+                            Sim. A versão atual é gratuita e o projeto possui
+                            código aberto sob licença MIT.
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="accordion-item">
+
+                    <h3 class="accordion-header">
+
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faqFive"
+                            aria-expanded="false"
+                            aria-controls="faqFive"
+                        >
+                            Posso verificar o código antes de instalar?
+                        </button>
+
+                    </h3>
+
+                    <div
+                        id="faqFive"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#faqAccordion"
+                    >
+                        <div class="accordion-body">
+                            Sim. O código-fonte está disponível publicamente no
+                            GitHub do projeto.
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer-content">
+
+            <div>
+
+                <div class="footer-brand">
+
+                    <img
+                        src="assets/icons/clareza-financeira-icon.png"
+                        alt=""
+                        width="38"
+                        height="38"
+                        class="footer-icon"
+                    >
+
+                    <strong>
+                        Clareza Financeira
+                    </strong>
+
+                </div>
+
+                <p>
+                    Entenda seu dinheiro sem complicação.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a
+                    href="https://github.com/Maiquel-Devs/clareza-financeira"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/maiquel-robert-mafra-junior-41a383364/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
+
+                <a href="#privacidade">
+                    Privacidade
+                </a>
+
+                <a href="#download">
+                    Download
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                Projeto open source sob licença MIT.
+            </span>
+
+            <span>
+                Desenvolvido por Maiquel Robert Mafra Junior.
+            </span>
+
+        </div>
+
+    </div>
+</footer>
+
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+></script>
 
 </body>
 </html>
